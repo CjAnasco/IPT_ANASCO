@@ -1,0 +1,94 @@
+/* Navbar Styling */
+nav.navbar {
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure navbar stays on top of all content */
+    background-color: #1F2833; /* Background color for clarity */
+    padding: 15px 20px; /* Adds padding for a balanced layout */
+    border-bottom: none; /* Remove any border that may appear */
+}
+
+/* About Me Section Styling */
+#about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 300px); /* Adjusted height for proper spacing */
+    padding: 20px;
+    margin-top: 259px; /* Increased margin to add more distance from the navbar */
+    padding-bottom: 50px; /* Ensures space at the bottom of the container */
+}
+
+/* About Me Container Styling */
+.about-me-container {
+    background-color: #2E3A46; /* Dark background for the container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 700px; /* Max width for the container */
+    margin-bottom: 50px; /* Adds bottom spacing */
+}
+
+
+/* Section Title Styling */
+.section-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #66FCF1; /* Accent color */
+}
+
+/* Description Paragraph */
+.about-me-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* List of Information */
+.info-list {
+    text-align: left;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.info-list li {
+    margin: 10px 0;
+}
+
+/* Social Media Links Container (Centered) */
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Social Media Icon Style */
+.social-link {
+    background-color: #2E3A46;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: transform 0.3s, background-color 0.3s;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover Effect for Icons */
+.social-link:hover {
+    background-color: #2E3A46;
+    transform: scale(1.1);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .social-links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

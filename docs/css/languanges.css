@@ -1,0 +1,82 @@
+/* Navbar Styling */
+.navbar {
+    background-color: var(--light-bg);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#languages {
+    margin-top: 120px; /* Adjusted margin to avoid navbar overlap */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Ensure content doesn't overlap */
+body {
+    margin-top: 80px; /* Adjust the body margin to provide more space */
+}
+
+/* Card Container for Languages */
+.language-cards-container .row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+/* Language Card Styling */
+.language-card {
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.language-card img {
+    width: 100%;
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensure image covers the space without distortion */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Card */
+.language-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect on Image */
+.language-card img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Title on Card */
+.language-card .card-body {
+    padding: 10px;
+}
+
+.language-card .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .language-cards-container .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-card {
+        width: 90%; /* Adjust width to ensure cards are centered */
+    }
+
+    .language-card img {
+        height: 200px; /* Slightly smaller images on mobile */
+    }
+}

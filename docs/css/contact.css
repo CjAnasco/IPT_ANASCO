@@ -1,0 +1,141 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0B0C10; /* Dark Blue background */
+    color: #fff; /* White text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #232F3E; /* Dark Blue */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fdfcf9 !important; /* Bright Orange */
+}
+
+/* Contact section */
+#contact {
+    padding: 100px 0 60px; /* Increased padding-top for space below navbar */
+    margin-top: 70px; /* To account for fixed navbar height */
+}
+
+/* Section title */
+.section-title {
+    font-size: 2.5rem;
+    color: #66FCF1; /* Bright Orange */
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Container for contact content */
+.container {
+    background-color: #1F2833; /* Dark Blue background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1200px; /* Adjusted for larger screens */
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto; /* Centers the container horizontally */
+}
+
+/* Flexbox to equally align two containers */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align containers at the top */
+}
+
+/* Form inside the container */
+form {
+    background-color: #232F3E; /* Dark Gray for the form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto; /* Prevent expanding beyond content */
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form .form-control {
+    border-radius: 4px;
+    border: 1px solid #555;
+    padding: 12px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+form button {
+    background-color: #FF9900; /* Bright Orange */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #e68a00;
+}
+
+/* Contact details styling */
+.contact-details {
+    background-color: #232F3E;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h4 {
+    color: #66FCF1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-details li {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .contact-details {
+        margin-top: 30px;
+    }
+
+    .row {
+        flex-direction: column; /* Stack form and contact details on small screens */
+    }
+}
